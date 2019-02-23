@@ -13,7 +13,7 @@ class Program
 User Admin = UserData.TestUser;
      
 LoginValidation validation = new LoginValidation();
-if (validation.ValidateUserInput()) 
+if (validation.ValidateUserInput(Admin)) 
 {Console.WriteLine(Admin.Username+", "+Admin.Password+", "+Admin.FakNum+", "+Admin.Role);}
 Console.WriteLine(LoginValidation.CurrentUserRole);
 Console.ReadLine();

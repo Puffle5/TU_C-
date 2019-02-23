@@ -9,7 +9,7 @@ namespace UniversitySystem
 static class UserData
 {
 
-    private static User testUser;
+private static User testUser;
 public static User TestUser
 {
 get {ResetUserData(); return testUser;}

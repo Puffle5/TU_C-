@@ -14,10 +14,20 @@ namespace UniversitySystem
             private set { currentUserRole = value; }
         }
         private static UserRoles currentUserRole;
-        private static String userName;
-        private static String password;
-        private static String errorMessage;
-        public bool ValidateUserInput()
-        {return true;}
+        private String userName;
+        private String password;
+        private String errorMessage;
+
+        public LoginValidation(String userName, String password) 
+        {this.userName = userName; this.password = password;}
+
+
+        public bool ValidateUserInput(User addedUser)
+        {
+            addedUser.Username = this.userName;
+            addedUser.Password = this.password;
+            return true;
+        
+        }
     }
 }
