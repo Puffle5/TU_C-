@@ -32,7 +32,8 @@ namespace UniversitySystem
             currentUserRole = (UserRoles)addedUser.Role;
             if (emptyUserName) {this.errorMessage = "Missing username!"; return false;}
             if (emptyPassWord) {this.errorMessage = "Missing password!"; return false;}
-
+            if (this.userName.Length < 5) { this.errorMessage = "Username too short!"; return false; }
+            if (this.password.Length < 5) { this.errorMessage = "Password too short!"; return false; }
             return true;
         
         }
