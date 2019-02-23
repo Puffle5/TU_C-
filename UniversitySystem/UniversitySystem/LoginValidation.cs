@@ -28,12 +28,12 @@ public static UserRoles CurrentUserRole
             currentUserRole = (UserRoles)addedUser.Role;
 
 
-            if (emptyUserName) {this.errorMessage = "Missing username!"; return false;}
-            if (emptyPassWord) {this.errorMessage = "Missing password!"; return false;}
-            if (this.userName.Length < 5) {this.errorMessage = "Username too short!"; return false;}
-            if (this.password.Length < 5) {this.errorMessage = "Password too short!"; return false;}
+            if (emptyUserName) { this.errorMessage = "Missing username!"; addedUser.Role = 0; return false; }
+            if (emptyPassWord) { this.errorMessage = "Missing password!"; addedUser.Role = 0; return false; }
+            if (this.userName.Length < 5) { this.errorMessage = "Username too short!"; addedUser.Role = 0; return false; }
+            if (this.password.Length < 5) { this.errorMessage = "Password too short!"; addedUser.Role = 0; return false; }
             User findUser = UserData.IsUserPassCorrect(this.userName, this.password);
-            if (findUser == null) {return false;}
+            if (findUser == null) { this.errorMessage = "User not found!"; addedUser.Role = 0; return false; }
             addedUser.Username = findUser.Username;
             addedUser.Password = findUser.Password;
             addedUser.FakNum = findUser.FakNum;
