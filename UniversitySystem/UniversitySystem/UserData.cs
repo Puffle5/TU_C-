@@ -9,14 +9,18 @@ namespace UniversitySystem
 static class UserData
 {
 
-private static User testUser;
-public static User TestUser
+private static User[] testUsers;
+public static User[] TestUsers
 {
-get {ResetUserData(); return testUser;}
-set {testUser = value;}
+get {ResetUserData(); return testUsers;}
+set {testUsers = value;}
 }
 
 private static void ResetUserData()
 {
-testUser = new User("Puffle5", "12345", "121216007", 1);
+testUsers = new User[3];
+testUsers[0] = new User("Puffle5", "12345", "121216007", 0);
+testUsers[1] = new User("John", "12321", "121216678", 0);
+testUsers[2] = new User("Petur40", "1234567890", "121216123", 0);
+//testUsers = new User[] {--"--};
 }}}

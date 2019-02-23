@@ -10,7 +10,7 @@ class Program
 {
  static void Main(string[] args)
 {
-User Admin = UserData.TestUser;
+User Admin = UserData.TestUsers;
 Console.WriteLine("Enter username:");
 String userName = Console.ReadLine();
 Console.WriteLine("Enter password:");
