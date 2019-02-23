@@ -26,6 +26,7 @@ namespace UniversitySystem
         {
             addedUser.Username = this.userName;
             addedUser.Password = this.password;
+            currentUserRole = (UserRoles)addedUser.Role;
             return true;
         
         }

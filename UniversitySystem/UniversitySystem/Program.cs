@@ -16,10 +16,10 @@ String userName = Console.ReadLine();
 Console.WriteLine("Enter password:");
 String password = Console.ReadLine();
 LoginValidation validation = new LoginValidation(userName, password);
+User user = new User();
 
-
-if (validation.ValidateUserInput(Admin)) 
-{Console.WriteLine(Admin.Username+", "+Admin.Password+", "+Admin.FakNum+", "+Admin.Role);}
+if (validation.ValidateUserInput(user)) 
+{Console.WriteLine(user.Username+", "+user.Password+", "+user.FakNum+", "+user.Role);}
 Console.WriteLine(LoginValidation.CurrentUserRole);
 Console.ReadLine();
 }}}
