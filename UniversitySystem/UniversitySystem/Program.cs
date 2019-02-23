@@ -15,6 +15,6 @@ User Admin = UserData.TestUser;
 LoginValidation validation = new LoginValidation();
 if (validation.ValidateUserInput()) 
 {Console.WriteLine(Admin.Username+", "+Admin.Password+", "+Admin.FakNum+", "+Admin.Role);}
-Console.WriteLine(LoginValidation.currentUserRole);
+Console.WriteLine(LoginValidation.CurrentUserRole);
 Console.ReadLine();
 }}}

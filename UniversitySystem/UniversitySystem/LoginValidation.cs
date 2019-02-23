@@ -8,11 +8,15 @@ namespace UniversitySystem
 {
     class LoginValidation
     {
-        public static UserRoles currentUserRole
+        public static UserRoles CurrentUserRole
         {
-            get;
-            private set;
+            get { return currentUserRole; }
+            private set { currentUserRole = value; }
         }
+        private static UserRoles currentUserRole;
+        private static String userName;
+        private static String password;
+        private static String errorMessage;
         public bool ValidateUserInput()
         {return true;}
     }
