@@ -24,9 +24,15 @@ namespace UniversitySystem
 
         public bool ValidateUserInput(User addedUser)
         {
+
+            Boolean emptyUserName = this.userName.Equals(String.Empty); 
+            Boolean emptyPassWord = this.password.Equals(String.Empty);
             addedUser.Username = this.userName;
             addedUser.Password = this.password;
             currentUserRole = (UserRoles)addedUser.Role;
+            if (emptyUserName) {this.errorMessage = "Missing username!"; return false;}
+            if (emptyPassWord) {this.errorMessage = "Missing password!"; return false;}
+
             return true;
         
         }
