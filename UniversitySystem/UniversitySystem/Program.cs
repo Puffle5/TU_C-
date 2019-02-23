@@ -8,6 +8,10 @@ namespace UniversitySystem
 {
 class Program
 {
+    public static void displayError(String errorMessage) 
+    {
+        Console.WriteLine("!!! "+errorMessage+" !!!");
+    }
  static void Main(string[] args)
 {
 //User Admin = UserData.TestUsers;
@@ -15,7 +19,9 @@ Console.WriteLine("Enter username:");
 String userName = Console.ReadLine();
 Console.WriteLine("Enter password:");
 String password = Console.ReadLine();
-LoginValidation validation = new LoginValidation(userName, password);
+LoginValidation.ActionOnError actionOnError = new LoginValidation.ActionOnError(displayError);
+
+LoginValidation validation = new LoginValidation(userName, password, actionOnError);
 User user = new User();
 
 if (validation.ValidateUserInput(user))
