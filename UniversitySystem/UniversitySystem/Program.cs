@@ -10,7 +10,7 @@ class Program
 {
  static void Main(string[] args)
 {
-User Admin = UserData.TestUsers;
+//User Admin = UserData.TestUsers;
 Console.WriteLine("Enter username:");
 String userName = Console.ReadLine();
 Console.WriteLine("Enter password:");
@@ -20,6 +20,12 @@ User user = new User();
 
 if (validation.ValidateUserInput(user))
 { Console.WriteLine(user.Username + ", " + user.Password + ", " + user.FakNum + ", " + user.Role); }
-Console.WriteLine(LoginValidation.CurrentUserRole);
+
+else 
+{
+    Console.WriteLine("Validation Failed!");
+    Console.WriteLine(LoginValidation.CurrentUserRole); 
+}
+
 Console.ReadLine();
 }}}
