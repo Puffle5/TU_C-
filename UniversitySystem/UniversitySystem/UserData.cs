@@ -26,13 +26,10 @@ testUsers[2] = new User("Petur40", "1234567890", "121216123", 4);
 }
 public static User IsUserPassCorrect(String username, String password)
 {
-    for (int i = 0; i < TestUsers.Length; i++) 
-    {
-        if (testUsers[i].Username == username && testUsers[i].Password == password)
-        {
-            return testUsers[i];
-        }
+    //for (int i = 0; i < TestUsers.Length; i++) 
+    foreach (User currentUser in TestUsers)
+    {if (currentUser.Username == username && currentUser.Password == password) {return currentUser;}}
 
-    } return null;
+   return null;
 }
 }}
