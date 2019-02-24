@@ -22,8 +22,8 @@ testUsers = new User[3];
 testUsers[0] = new User("Puffle5", "12345", "121216007", 1);
 testUsers[1] = new User("Johnson", "12321", "121216678", 4);
 testUsers[2] = new User("Petur40", "1234567890", "121216123", 4);
-for (int i = 0; i < TestUsers.Length; i++) 
-{TestUsers[i].Created = DateTime.Now;}
+for (int i = 0; i < TestUsers.Length; i++)
+{TestUsers[i].Created = DateTime.Now; TestUsers[i].ExpirationDate = DateTime.MaxValue;}
 //testUsers = new User[] {--"--};
 }
 public static User IsUserPassCorrect(String username, String password)

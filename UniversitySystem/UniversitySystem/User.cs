@@ -8,11 +8,12 @@ namespace UniversitySystem
 {
 class User
 {
-    public String Username;
-    public String Password;
-    public String FakNum;
-    public Int32 Role;
-    public DateTime Created;
+    public String Username {get; set;}
+    public String Password {get; set;}
+    public String FakNum {get; set;}
+    public Int32 Role {get; set;}
+    public DateTime Created {get; set;}
+    public DateTime ExpirationDate {get; set;}
     public User() { }
     public User(String Username, String Password, String FakNum, Int32 Role) 
     {
