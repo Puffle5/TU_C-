@@ -28,6 +28,7 @@ public static UserRoles CurrentUserRole
             Boolean emptyPassWord = this.password.Equals(String.Empty);
            
             currentUserRole = (UserRoles)addedUser.Role;
+          
 
 
             if (emptyUserName) { this.errorMessage = "Missing username!"; this.actionOnError(this.errorMessage); addedUser.Role = 0; return false; }
@@ -40,7 +41,7 @@ public static UserRoles CurrentUserRole
             addedUser.Password = findUser.Password;
             addedUser.FakNum = findUser.FakNum;
             addedUser.Role = findUser.Role;
-
+            Logger.LogActivity("Successful Login");
             return true;
         
         }
