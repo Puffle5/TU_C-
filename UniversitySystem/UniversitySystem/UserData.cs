@@ -46,5 +46,16 @@ public static void SetUserActiveTo(String username, DateTime newActivityDate)
     }
 
 }
+public static void AssignUserRole(String username, UserRoles newRole) 
+{
+    for (int i = 0; i < TestUsers.Length; i++) 
+    {
+        if (TestUsers[i].Username == username)
+        {TestUsers[i].Role = (int)newRole; break;}
+    
+    }
+
+}
+
 }
 }
