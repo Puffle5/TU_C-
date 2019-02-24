@@ -12,6 +12,7 @@ class User
     public String Password;
     public String FakNum;
     public Int32 Role;
+    public DateTime Created;
     public User() { }
     public User(String Username, String Password, String FakNum, Int32 Role) 
     {
