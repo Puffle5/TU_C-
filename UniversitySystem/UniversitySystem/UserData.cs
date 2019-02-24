@@ -34,4 +34,17 @@ public static User IsUserPassCorrect(String username, String password)
 
    return null;
 }
-}}
+
+public static void SetUserActiveTo(String username, DateTime newActivityDate) 
+{
+    for (int i = 0; i < TestUsers.Length; i++) 
+    {
+        if (TestUsers[i].Username == username) 
+        {
+          TestUsers[i].ExpirationDate = newActivityDate;
+        }
+    }
+
+}
+}
+}
