@@ -38,12 +38,15 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
         Console.WriteLine("0: Exit");
         Console.WriteLine("1: Change User Role");
         Console.WriteLine("2: Change User Activity");
+        Console.WriteLine("3: User List");
         adminOption = Console.ReadLine();
         
         switch (adminOption) 
         {
             case "1": changeUserRole(); break;
             case "2": changeUserActivity(); break;
+            case "3": Dictionary<String, int> allusers = UserData.AllUsersUsernames();
+                      foreach (var currentUser in allusers) {Console.WriteLine(currentUser.Key);} break;
         
       }
     

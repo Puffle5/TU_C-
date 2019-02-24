@@ -63,6 +63,16 @@ public static void AssignUserRole(String username, UserRoles newRole)
     }
     Logger.LogActivity("Change of " + username + "'s role");
 }
+public static Dictionary<String, int> AllUsersUsernames() 
+{
+    Dictionary<String, int> result = new Dictionary<string, int>();
+    for (int i = 0; i < testUsers.Count; i++) 
+    {
+        result.Add(testUsers[i].Username, i);
+    
+    }
 
+        return result;
+}
 }
 }
