@@ -16,6 +16,10 @@ static void Main(string[] args)
     Console.WriteLine("Hour: "+date.Hour);
     Console.WriteLine("Now: "+DateTime.Now.Hour);
     Console.WriteLine("Today: "+DateTime.Today);
+    //Date in 12 Hours:
+    Console.WriteLine("Date in 12 Hours: "+DateTime.Now.AddHours(12));
+
+
     Console.ReadLine();
 
 }
