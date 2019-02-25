@@ -42,26 +42,17 @@ public static User IsUserPassCorrect(String username, String password)
    return null;
 }
 
-public static void SetUserActiveTo(String username, DateTime newActivityDate) 
+public static void SetUserActiveTo(int index, DateTime newActivityDate) 
 {
-    for (int i = 0; i < TestUsers.Count; i++) 
-    {
-        if (TestUsers[i].Username == username) 
-        {
-          TestUsers[i].ExpirationDate = newActivityDate;
-        }
-    }
-    Logger.LogActivity("Change of "+username+"'s activity");
+   
+    testUsers[index].ExpirationDate = newActivityDate;
+    Logger.LogActivity("Change of "+testUsers[index].Username+"'s activity");
 }
-public static void AssignUserRole(String username, UserRoles newRole) 
+public static void AssignUserRole(int index, UserRoles newRole) 
 {
-    for (int i = 0; i < TestUsers.Count; i++) 
-    {
-        if (TestUsers[i].Username == username)
-        {TestUsers[i].Role = (int)newRole; break;}
-    
-    }
-    Logger.LogActivity("Change of " + username + "'s role");
+   
+    testUsers[index].Role = (int)newRole;
+    Logger.LogActivity("Change of " + testUsers[index].Username + "'s role");
 }
 public static Dictionary<String, int> AllUsersUsernames() 
 {

@@ -46,7 +46,11 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
             case "1": changeUserRole(); break;
             case "2": changeUserActivity(); break;
             case "3": Dictionary<String, int> allusers = UserData.AllUsersUsernames();
-                      foreach (var currentUser in allusers) {Console.WriteLine(currentUser.Key);} break;
+                      foreach (var currentUser in allusers) 
+                      {
+                          Console.WriteLine(currentUser.Key);
+                          Console.WriteLine(UserData.TestUsers[currentUser.Value]);
+                      } break;
         
       }
     
@@ -75,7 +79,8 @@ Console.ReadLine();
      Console.WriteLine("Enter new role:");
      int newRole = int.Parse(Console.ReadLine());
      UserRoles currentRole = (UserRoles)newRole;
-     UserData.AssignUserRole(username, currentRole);
+     Dictionary<String, int> allusers = UserData.AllUsersUsernames();
+     UserData.AssignUserRole(allusers[username], currentRole);
  }
 
  public static void changeUserActivity() 
@@ -90,7 +95,8 @@ Console.ReadLine();
     Console.WriteLine("Enter Day:");
     int day = int.Parse(Console.ReadLine());
     DateTime date = new DateTime(year, month, day);
-    UserData.SetUserActiveTo(username, date);
+    Dictionary<String, int> allusers = UserData.AllUsersUsernames();
+    UserData.SetUserActiveTo(allusers[username], date);
  
  
 }

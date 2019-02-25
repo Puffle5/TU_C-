@@ -24,5 +24,9 @@ class User
  
 
     }
+    public override string ToString()
+    {
+        return this.Username + ", " + this.Role;
+    }
 }
 }
