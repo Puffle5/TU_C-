@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace UniversitySystem
 {
@@ -39,6 +40,7 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
         Console.WriteLine("1: Change User Role");
         Console.WriteLine("2: Change User Activity");
         Console.WriteLine("3: User List");
+        Console.WriteLine("4: Display Activity Log");
         adminOption = Console.ReadLine();
         
         switch (adminOption) 
@@ -51,6 +53,18 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
                           Console.WriteLine(currentUser.Key);
                           Console.WriteLine(UserData.TestUsers[currentUser.Value]);
                       } break;
+            case "4":
+                StreamReader reader = new StreamReader(@"C:\Users\Elly\IdeaProjects\TU_C_Sharp\UniversitySystem\UniversitySystem\test.txt");
+                String currentLine = reader.ReadLine();
+                while (currentLine != null) 
+                {
+
+                    Console.WriteLine(currentLine);
+                    currentLine = reader.ReadLine();
+                
+             }
+                reader.Close();
+                break;
         
       }
     
