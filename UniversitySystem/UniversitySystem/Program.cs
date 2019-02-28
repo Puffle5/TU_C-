@@ -41,6 +41,7 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
         Console.WriteLine("2: Change User Activity");
         Console.WriteLine("3: User List");
         Console.WriteLine("4: Display Activity Log");
+        Console.WriteLine("5: Display Current Activity Logs");
         adminOption = Console.ReadLine();
         
         switch (adminOption) 
@@ -65,6 +66,9 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
              }
                 reader.Close();
                 break;
+
+            case "5": String currentLogData = Logger.GetCurrentSessionActivities(); 
+                      Console.WriteLine(currentLogData); break;
         
       }
     
