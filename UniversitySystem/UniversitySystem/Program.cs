@@ -59,7 +59,10 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
                
                 break;
 
-            case "5": String currentLogData = Logger.GetCurrentSessionActivities(); 
+            case "5":
+                Console.WriteLine("Enter log filter:");
+                String filter = Console.ReadLine();
+                String currentLogData = Logger.GetCurrentSessionActivities(filter); 
                       Console.WriteLine(currentLogData); break;
         
       }
