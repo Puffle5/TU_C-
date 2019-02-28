@@ -55,16 +55,8 @@ case 1: Console.WriteLine("Welcome, ADMIN!");
                           Console.WriteLine(UserData.TestUsers[currentUser.Value]);
                       } break;
             case "4":
-                StreamReader reader = new StreamReader(@"C:\Users\Elly\IdeaProjects\TU_C_Sharp\UniversitySystem\UniversitySystem\test.txt");
-                String currentLine = reader.ReadLine();
-                while (currentLine != null) 
-                {
-
-                    Console.WriteLine(currentLine);
-                    currentLine = reader.ReadLine();
-                
-             }
-                reader.Close();
+                LoadActivityLogs();
+               
                 break;
 
             case "5": String currentLogData = Logger.GetCurrentSessionActivities(); 
@@ -118,6 +110,24 @@ Console.ReadLine();
  
  
 }
+    public static void LoadActivityLogs() 
+    {
+        StreamReader reader = new StreamReader(@"C:\Users\Elly\IdeaProjects\TU_C_Sharp\UniversitySystem\UniversitySystem\test.txt");
+        String currentLine = reader.ReadLine();
+        StringBuilder logBuilder = new StringBuilder();
+
+        while (currentLine != null)
+        {
+
+            logBuilder.Append(currentLine);
+            logBuilder.Append(Environment.NewLine);
+            currentLine = reader.ReadLine();
+
+        }
+        Console.WriteLine(logBuilder.ToString());
+        reader.Close();
+    
+    }
 
 
 }}
