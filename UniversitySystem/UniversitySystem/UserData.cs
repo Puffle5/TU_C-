@@ -35,11 +35,8 @@ for (int i = 0; i < testUsers.Count; i++)
 }
 public static User IsUserPassCorrect(String username, String password)
 {
-    //for (int i = 0; i < TestUsers.Length; i++) 
-    foreach (User currentUser in TestUsers)
-    {if (currentUser.Username == username && currentUser.Password == password) {return currentUser;}}
-
-   return null;
+    User user = (from findUser in TestUsers where findUser.Username == username && findUser.Password == password select findUser).First();
+    return user;
 }
 
 public static void SetUserActiveTo(int index, DateTime newActivityDate) 
