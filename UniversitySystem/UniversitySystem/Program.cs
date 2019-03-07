@@ -20,9 +20,11 @@ Console.WriteLine("Enter username:");
 String userName = Console.ReadLine();
 Console.WriteLine("Enter password:");
 String password = Console.ReadLine();
-LoginValidation.ActionOnError actionOnError = new LoginValidation.ActionOnError(displayError);
 
-LoginValidation validation = new LoginValidation(userName, password, actionOnError);
+     
+     //LoginValidation.ActionOnError actionOnError = new LoginValidation.ActionOnError(displayError);
+
+LoginValidation validation = new LoginValidation(userName, password, displayError);
 User user = new User();
 
 if (validation.ValidateUserInput(user))
@@ -80,7 +82,7 @@ case 4: Console.WriteLine("Welcome, STUDENT!"); break;
 else 
 {
     Console.WriteLine("Validation Failed!");
-    Console.WriteLine(LoginValidation.CurrentUserRole); 
+    Console.WriteLine(LoginValidation.CurrentUserRole);
 }
 
 Console.ReadLine();
