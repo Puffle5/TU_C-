@@ -19,6 +19,8 @@ namespace StudentRepository
         public int Course {get; set;}
         public int Flow {get; set;}
         public int Group { get; set; }
+        public DateTime FinishedSemesterDate {get; set;}
+        public DateTime SemesterPaymentDate { get; set; }
 
         public Student(String FirstName, String MiddleName, String LastName, String Faculty, String Specialty, String Degree, Status status, String FacultyNumber, int Course, int Flow, int Group) 
         {
@@ -26,7 +28,17 @@ namespace StudentRepository
             this.Faculty = Faculty; this.Specialty = Specialty; this.Degree = Degree;
             this.status = status; this.FacultyNumber = FacultyNumber;
             this.Course = Course; this.Flow = Flow; this.Group = Group;
-        }       
+           
+        }
+        public Student(String FirstName, String MiddleName, String LastName, String Faculty, String Specialty, String Degree, Status status, String FacultyNumber, int Course, int Flow, int Group, DateTime FinishedSemesterDate, DateTime SemesterPaymentDate)
+        {
+            this.FirstName = FirstName; this.MiddleName = MiddleName; this.LastName = LastName;
+            this.Faculty = Faculty; this.Specialty = Specialty; this.Degree = Degree;
+            this.status = status; this.FacultyNumber = FacultyNumber;
+            this.Course = Course; this.Flow = Flow; this.Group = Group;
+            this.FinishedSemesterDate = FinishedSemesterDate; this.SemesterPaymentDate = SemesterPaymentDate;
+        }
+
         
     }
 }

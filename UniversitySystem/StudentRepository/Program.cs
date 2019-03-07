@@ -9,7 +9,7 @@ namespace StudentRepository
 class Program
 {
 static void Main(string[] args)
-{
+    {
     DateTime date = new DateTime(2017, 9, 15, 10, 30, 0);
     Console.WriteLine("Year: "+date.Year);
     Console.WriteLine("Day: "+date.Day);
@@ -26,10 +26,7 @@ static void Main(string[] args)
     int day = int.Parse(Console.ReadLine());
     DateTime Date = new DateTime(year, month, day);
     Console.WriteLine(Date);
-
-
     Console.ReadLine();
-
 }
 }
 }
