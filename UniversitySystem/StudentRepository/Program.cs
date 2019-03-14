@@ -10,7 +10,11 @@ class Program
 {
 static void Main(string[] args)
     {
-    DateTime date = new DateTime(2017, 9, 15, 10, 30, 0);
+        Console.WriteLine("Enter faculty number: ");
+        String facultyNumber = Console.ReadLine();
+        StudentData.CreateReferences(@"C:\Users\Elly\IdeaProjects\TU_C_Sharp\UniversitySystem\StudentRepository\ReferenceLog.txt", facultyNumber);
+
+    /*DateTime date = new DateTime(2017, 9, 15, 10, 30, 0);
     Console.WriteLine("Year: "+date.Year);
     Console.WriteLine("Day: "+date.Day);
     Console.WriteLine("Hour: "+date.Hour);
@@ -25,7 +29,7 @@ static void Main(string[] args)
     Console.WriteLine("Enter Day: ");
     int day = int.Parse(Console.ReadLine());
     DateTime Date = new DateTime(year, month, day);
-    Console.WriteLine(Date);
+    Console.WriteLine(Date);*/
     Console.ReadLine();
 }
 }

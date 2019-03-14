@@ -14,7 +14,15 @@ class Program
         Console.WriteLine("!!! "+errorMessage+" !!!");
     }
  static void Main(string[] args)
-{
+    {
+        Console.WriteLine("Enter faculty number: ");
+        String facultyNumber = Console.ReadLine();
+     
+
+       
+
+
+
 //User Admin = UserData.TestUsers;
 Console.WriteLine("Enter username:");
 String userName = Console.ReadLine();
