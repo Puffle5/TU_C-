@@ -7,7 +7,7 @@ using System.IO;
 
 namespace UniversitySystem
 {
-    static class Logger
+    public static class Logger
     {
         private static List<String> currentSessionActivities = new List<String>();
         public static void LogActivity(String activity) 

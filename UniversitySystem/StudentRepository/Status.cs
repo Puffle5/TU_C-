@@ -1,1 +1,1 @@
-﻿enum Status {CERTIFIED, DROPPED, GRADUATED}
+﻿public enum Status {CERTIFIED, DROPPED, GRADUATED}

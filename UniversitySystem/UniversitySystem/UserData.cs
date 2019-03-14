@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UniversitySystem
 {
-static class UserData
+public static class UserData
 {
 
 private static List<User> testUsers;

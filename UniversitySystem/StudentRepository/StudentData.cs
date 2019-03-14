@@ -7,7 +7,7 @@ using System.IO;
 
 namespace StudentRepository
 {
-    static class StudentData
+    public static class StudentData
     {
         private static List<Student> testStudents;
         public static List<Student> TestStudents 
