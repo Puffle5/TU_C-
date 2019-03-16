@@ -3,11 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525" VerticalAlignment="Center">
     <Grid>
-        <GroupBox x:Name="gbUser" Header="User&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="108" Width="497" Margin="10,10,0,0" FontSize="24" FontFamily="Arial Black">
-            <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="92"/>
+        <GroupBox x:Name="gbUser" Header="User&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="158" Width="497" Margin="10,10,0,0" FontSize="24" FontFamily="Arial Black">
+            <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="92" Margin="0,44,0,0"/>
         </GroupBox>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="32" Margin="119,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371" FontSize="24" FontFamily="Arial"/>
-        <Button Content="Hello!" HorizontalAlignment="Left" Margin="372,134,0,0" VerticalAlignment="Top" Width="101" FontSize="24" Click="Button_Click_1"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="32" Margin="121,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371" FontSize="24" FontFamily="Arial"/>
+        <Button Content="Hello!" HorizontalAlignment="Left" Margin="391,188,0,0" VerticalAlignment="Top" Width="101" FontSize="24" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
