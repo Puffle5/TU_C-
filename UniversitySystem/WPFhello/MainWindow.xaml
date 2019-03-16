@@ -4,6 +4,7 @@
         Title="MainWindow" Height="350" Width="525" VerticalAlignment="Center">
     <Grid>
         <Label Content="Hello, WPF!" Margin="31,99" Height="122" Width="455" FontSize="72" FontFamily="Showcard Gothic" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Content="Hi!" HorizontalAlignment="Left" Margin="158,221,0,0" VerticalAlignment="Top" Width="178" Height="60" Click="Button_Click_1" FontFamily="Showcard Gothic" FontSize="36"/>
 
     </Grid>
 </Window>

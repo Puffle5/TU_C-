@@ -24,5 +24,10 @@ namespace WPFhello
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello! This is your first VS 2012 program!");
+        }
     }
 }

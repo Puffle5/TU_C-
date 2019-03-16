@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>82caef9d-94eb-4aa7-aa57-ff4e2abfc84c</ProjectGuid>
+    <ProjectGuid>{645214EE-5059-4E64-A5FE-4C1AD433AD6A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WPFhello</RootNamespace>
@@ -51,6 +51,7 @@
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
