@@ -51,6 +51,19 @@ namespace WPFhello
             {result *= i;}
             return result;
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            String baseNumber = factorialInput.Text;
+            String power = powerInput.Text;
+            long baseValue = long.Parse(baseNumber);
+            long powerValue = long.Parse(power);
+            double result = Math.Pow(baseValue, powerValue);
+            MessageBox.Show(baseValue+"^"+powerValue+" = "+result); 
+
+        }
+
+       
        
     }
 }
