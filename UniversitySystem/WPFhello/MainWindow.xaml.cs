@@ -62,7 +62,17 @@ namespace WPFhello
             MessageBox.Show(baseValue+"^"+powerValue+" = "+result); 
 
         }
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.No)
+            {
+                e.Cancel = true;
 
+            }
+            else { e.Cancel = false; }
+            base.OnClosing(e);
+        }
        
        
     }
