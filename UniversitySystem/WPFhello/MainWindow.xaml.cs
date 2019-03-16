@@ -27,7 +27,14 @@ namespace WPFhello
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello, "+txtName.Text+"!!!\nThis is your first VS 2012 program!");
+            String userInput = txtName.Text;
+            if (userInput.Length > 2)
+            {
+                MessageBox.Show("Hello, " + txtName.Text + "!!!\nThis is your first VS 2012 program!");
+            }
+            else { 
+                MessageBox.Show("Username must be at least 2 characters long!"); 
+            }
         }
 
        
