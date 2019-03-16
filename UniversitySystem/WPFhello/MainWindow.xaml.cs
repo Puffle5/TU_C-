@@ -37,6 +37,20 @@ namespace WPFhello
             }
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            String factorial = factorialInput.Text;
+            long factorialValue = long.Parse(factorial);
+            long result = calculateFactorial(factorialValue);
+            MessageBox.Show("Factorial of "+factorial+" is "+result+"."); 
+        }
+        long calculateFactorial(long number) 
+        {
+            long result = 1;
+            for (int i = 1; i <= number; i++) 
+            {result *= i;}
+            return result;
+        }
        
     }
 }

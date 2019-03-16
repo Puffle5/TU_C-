@@ -3,11 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525" VerticalAlignment="Center">
     <Grid>
-        <GroupBox x:Name="gbUser" Header="User&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="158" Width="497" Margin="10,10,0,0" FontSize="24" FontFamily="Arial Black">
-            <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="92" Margin="0,44,0,0"/>
+        <GroupBox x:Name="gbUser" Header="User&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="87" Width="382" Margin="10,10,0,0" FontSize="24" FontFamily="Arial Black">
+            <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="92" Margin="10,-19,0,0"/>
         </GroupBox>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="32" Margin="121,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371" FontSize="24" FontFamily="Arial"/>
-        <Button Content="Hello!" HorizontalAlignment="Left" Margin="391,188,0,0" VerticalAlignment="Top" Width="101" FontSize="24" Click="Button_Click_1"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="32" Margin="131,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" FontSize="24" FontFamily="Arial"/>
+        <Button Content="Hello!" HorizontalAlignment="Left" Margin="406,49,0,0" VerticalAlignment="Top" Width="101" FontSize="24" Click="Button_Click_1" FontFamily="Arial"/>
+        <Label Content="Factorial:&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="134" Height="46" FontFamily="Arial Black" FontSize="24"/>
+        <TextBox x:Name="factorialInput" HorizontalAlignment="Left" Height="32" Margin="159,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84"/>
+        <Button Content="Calculate Factorial" HorizontalAlignment="Left" Margin="260,114,0,0" VerticalAlignment="Top" Width="215" Click="Button_Click_2" FontSize="24" FontFamily="Arial"/>
 
     </Grid>
 </Window>
