@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts", "Concepts\Concep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRepository", "StudentRepository\StudentRepository.csproj", "{E992310C-3302-46B0-ADBA-8E4385355AC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentInfoSystem", "StudentInfoSystem\StudentInfoSystem.csproj", "{04208921-1E0F-4EFC-8CA8-146B986A070F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{E992310C-3302-46B0-ADBA-8E4385355AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E992310C-3302-46B0-ADBA-8E4385355AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E992310C-3302-46B0-ADBA-8E4385355AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04208921-1E0F-4EFC-8CA8-146B986A070F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04208921-1E0F-4EFC-8CA8-146B986A070F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04208921-1E0F-4EFC-8CA8-146B986A070F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04208921-1E0F-4EFC-8CA8-146B986A070F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

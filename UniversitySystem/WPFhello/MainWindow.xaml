@@ -1,0 +1,9 @@
+﻿<Window x:Class="WPFhello.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" VerticalAlignment="Center">
+    <Grid>
+        <Label Content="Hello, WPF!" Margin="31,99" Height="122" Width="455" FontSize="72" FontFamily="Showcard Gothic" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+    </Grid>
+</Window>
