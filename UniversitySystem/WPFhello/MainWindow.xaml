@@ -21,7 +21,8 @@
         <Button Content="Welcome all!" HorizontalAlignment="Left" Margin="186,304,0,0" VerticalAlignment="Top" Width="193" Height="34" FontSize="24" FontFamily="Arial" Click="Button_Click_4"/>
         <Label Content="Third Name:" HorizontalAlignment="Left" Margin="10,248,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Arial Black" Width="171"/>
         <TextBox HorizontalAlignment="Left" Height="32" Margin="186,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" FontSize="24" FontFamily="Arial"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" FontSize="20" TextWrapping="Wrap" Text="Hello, XAML!" VerticalAlignment="Top" Height="34" Width="127" Margin="221,350,0,0"/>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black" Margin="186,389,138,16" Height="66" Width="193" Padding="10">I edit XAML myself!</TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" FontSize="24" TextWrapping="Wrap" Text="Hello, XAML!" VerticalAlignment="Top" Height="34" Width="193" Margin="186,350,0,0" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black" Margin="144,371,104,60" Height="40" Width="269" Padding="10" FontSize="24">I edit XAML myself!</TextBlock>
+        <Button HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="36" Margin="10,0,10,24" Click="Button_Click_5" FontSize="24" FontFamily="Arial">Click me!</Button>
     </Grid>
 </Window>

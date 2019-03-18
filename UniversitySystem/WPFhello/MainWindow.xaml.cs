@@ -87,6 +87,12 @@ namespace WPFhello
             messageBuilder.Append("Welcome!");
             MessageBox.Show(messageBuilder.ToString());
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello, Windows Presentation Foundation!");
+            textBlock1.Text = DateTime.Now.ToString();
+        }
        
        
     }
