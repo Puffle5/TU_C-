@@ -26,5 +26,17 @@ namespace StudentInfoSystem
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            foreach (var currentChild in mainGrid.Children) 
+            {
+                if (currentChild is TextBox) 
+                {
+                    ((TextBox)currentChild).Text = Environment.NewLine;
+                
+                }
+            }
+        }
     }
 }
