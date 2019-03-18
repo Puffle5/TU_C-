@@ -53,8 +53,32 @@ namespace StudentInfoSystem
             courseText.Text = student.Course.ToString();
             flowText.Text = student.Flow.ToString();
             groupText.Text = student.Group.ToString();
+            
 
+        }
 
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            foreach (var currentChild in mainGrid.Children)
+            {
+                if (currentChild is TextBox)
+                {
+                    ((TextBox)currentChild).IsEnabled = false;
+
+                }
+            }
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            foreach (var currentChild in mainGrid.Children)
+            {
+                if (currentChild is TextBox)
+                {
+                    ((TextBox)currentChild).IsEnabled = true;
+
+                }
+            }
         }
     }
 }
