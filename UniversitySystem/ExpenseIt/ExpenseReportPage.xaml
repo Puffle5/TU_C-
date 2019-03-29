@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ExpenseIt"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ExpenseReportPage">
+      Title="ExpenseIt - View Expense">
 
     <Grid>
         
