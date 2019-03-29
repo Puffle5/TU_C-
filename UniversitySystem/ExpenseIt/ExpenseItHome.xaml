@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:ExpenseIt"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ExpenseIt - Home" Margin="10,0,10,10">
+      Title="ExpenseIt - Home">
 
-    <Grid>
+    <Grid Margin="10,0,10,10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
@@ -22,6 +22,8 @@
         <ListBox Name="peopleListBox" Grid.Row="1">
             <ListBoxItem>Mike</ListBoxItem>
         </ListBox>
+        <!-- View report button -->
+        <Button Margin="0,10,0,0" Width="125" Height="25" HorizontalAlignment="Right" Grid.Row="2">View</Button>
 
 
     </Grid>
