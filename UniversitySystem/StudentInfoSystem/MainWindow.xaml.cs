@@ -39,7 +39,7 @@ namespace StudentInfoSystem
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+       /* private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Student student = StudentData.TestStudents[0];
             firstNameText.Text = student.FirstName;
@@ -55,7 +55,7 @@ namespace StudentInfoSystem
             groupText.Text = student.Group.ToString();
             
 
-        }
+        }*/
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
