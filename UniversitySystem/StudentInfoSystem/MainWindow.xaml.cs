@@ -29,12 +29,20 @@ namespace StudentInfoSystem
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            foreach (var currentChild in mainGrid.Children) 
+            foreach (var currentChild in personalGrid.Children) 
             {
                 if (currentChild is TextBox) 
                 {
                     ((TextBox)currentChild).Text = Environment.NewLine;
                 
+                }
+            }
+            foreach (var currentChild in informationGrid.Children)
+            {
+                if (currentChild is TextBox)
+                {
+                    ((TextBox)currentChild).Text = Environment.NewLine;
+
                 }
             }
         }
@@ -59,7 +67,15 @@ namespace StudentInfoSystem
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            foreach (var currentChild in mainGrid.Children)
+            foreach (var currentChild in personalGrid.Children)
+            {
+                if (currentChild is TextBox)
+                {
+                    ((TextBox)currentChild).IsEnabled = false;
+
+                }
+            }
+            foreach (var currentChild in informationGrid.Children)
             {
                 if (currentChild is TextBox)
                 {
@@ -71,7 +87,15 @@ namespace StudentInfoSystem
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            foreach (var currentChild in mainGrid.Children)
+            foreach (var currentChild in personalGrid.Children)
+            {
+                if (currentChild is TextBox)
+                {
+                    ((TextBox)currentChild).IsEnabled = true;
+
+                }
+            }
+            foreach (var currentChild in informationGrid.Children)
             {
                 if (currentChild is TextBox)
                 {
