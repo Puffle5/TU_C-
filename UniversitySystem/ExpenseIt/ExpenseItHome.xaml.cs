@@ -35,7 +35,7 @@ namespace ExpenseIt
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             String greetingMessage;
-            greetingMessage = peopleListBox.SelectedItem.ToString();
+            greetingMessage = (peopleListBox.SelectedItem as ListBoxItem).Content.ToString();
             MessageBox.Show("Hi, " + greetingMessage+".");
         }
     }
