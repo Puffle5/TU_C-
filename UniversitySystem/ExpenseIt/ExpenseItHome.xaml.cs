@@ -38,5 +38,11 @@ namespace ExpenseIt
             greetingMessage = (peopleListBox.SelectedItem as ListBoxItem).Content.ToString();
             MessageBox.Show("Hi, " + greetingMessage+".");
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ExpenseReportPage expenseReportPage = new ExpenseReportPage();
+            this.NavigationService.Navigate(expenseReportPage);
+        }
     }
 }
