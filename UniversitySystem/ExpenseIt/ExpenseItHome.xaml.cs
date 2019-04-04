@@ -29,6 +29,7 @@ namespace ExpenseIt
             ListBoxItem david = new ListBoxItem();
             david.Content = "David";
             peopleListBox.Items.Add(david);
+            peopleListBox.SelectedItem = james;
         }
     }
 }
