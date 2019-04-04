@@ -31,5 +31,12 @@ namespace ExpenseIt
             peopleListBox.Items.Add(david);
             peopleListBox.SelectedItem = james;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            String greetingMessage;
+            greetingMessage = peopleListBox.SelectedItem.ToString();
+            MessageBox.Show("Hi, " + greetingMessage+".");
+        }
     }
 }
