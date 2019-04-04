@@ -23,6 +23,7 @@ namespace ExpenseIt
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

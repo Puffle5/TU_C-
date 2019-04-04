@@ -23,6 +23,8 @@ namespace ExpenseIt
         public ExpenseItHome()
         {
             InitializeComponent();
+            peopleListBox.Items.Add("James");
+            peopleListBox.Items.Add("David");
         }
     }
 }
