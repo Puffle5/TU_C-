@@ -8,7 +8,11 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ExpenseIt - Home">
-    <Grid Margin="10,0,10,10">
+
+    <Page.Resources>
+        <sys:String x:Key="strTitle">View Expense Report</sys:String>
+    </Page.Resources>
+   <Grid Margin="10,0,10,10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition Width="230"/>
@@ -22,7 +26,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="watermark.png"/>
         </Grid.Background>
-        <Label Grid.Column="1">View Expense Report</Label>
+        <Label Grid.Column="1" Content="{StaticResource strTitle}"></Label>
         <!-- People list -->
         <Border Height="35" Padding="5" Background="#4E87D4" Grid.Row="1" Grid.Column="1">
             <Label VerticalAlignment="Center" Foreground="White">Names</Label>
@@ -39,7 +43,5 @@
         <Button Margin="0,10,0,0" Width="125" Height="25" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="1" Click="Button_Click_1">View</Button>
         <Button Margin="0,10,0,0" Width="125" Height="25" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="1" Click="Button_Click">Greeting</Button>
     </Grid>
-    <Page.Resources>
-        <sys:String x:Key="strTitle">View Expense Report</sys:String>
-    </Page.Resources>
+    
 </Page>
