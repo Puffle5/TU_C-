@@ -11,6 +11,11 @@
 
     <Page.Resources>
         <sys:String x:Key="strTitle">View Expense Report</sys:String>
+        <Style TargetType="Label">
+            <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>
+
+        </Style>
     </Page.Resources>
    <Grid Margin="10,0,10,10">
         <Grid.ColumnDefinitions>
@@ -26,7 +31,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="watermark.png"/>
         </Grid.Background>
-        <Label Grid.Column="1" Content="{StaticResource strTitle}" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="22" Foreground="#0066cc"></Label>
+        <Label Grid.Column="1" Content="{StaticResource strTitle}" FontWeight="Bold" FontSize="22" Foreground="#0066cc"></Label>
         <!-- People list -->
         <Border Height="35" Padding="5" Background="#4E87D4" Grid.Row="1" Grid.Column="1">
             <Label VerticalAlignment="Center" Foreground="White">Names</Label>
