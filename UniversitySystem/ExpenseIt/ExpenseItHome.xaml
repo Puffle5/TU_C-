@@ -14,7 +14,6 @@
         <Style TargetType="Label">
             <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
             <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>
-
         </Style>
     </Page.Resources>
    <Grid Margin="10,0,10,10">
