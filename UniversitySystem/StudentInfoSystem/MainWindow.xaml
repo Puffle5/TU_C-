@@ -6,12 +6,12 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             
-            <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <GroupBox Header="Photo" Grid.Column="0" Height="300" Width="250">
         </GroupBox>
-
+        <Image Source="C:\Users\Lenny\Desktop\Star Angel Data\ТУ\GitHub\TU_C_Sharp\UniversitySystem\StudentInfoSystem\No Photo Available.jpg" Height="260" Width="230"/>
 
 
         <GroupBox Grid.Column="1" Header="Personal Data" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="154" Width="701" FontFamily="Arial" FontSize="17">
