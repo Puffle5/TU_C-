@@ -25,6 +25,15 @@ namespace StudentInfoSystem
         public MainWindow()
         {
             InitializeComponent();
+            if (NavigationService == null)
+            {
+                NavigationService = new NavigationService();
+            }
+            else
+            {
+                
+            }
+            NavigationService.LoadCompleted += NavigationService_LoadCompleted;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -104,5 +113,36 @@ namespace StudentInfoSystem
                 }
             }
         }
+
+        private void NavigationService_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+            MessageBox.Show("Username must be at least 2 characters long!");
+            string str = (string)e.ExtraData;
+
+            string[] words = str.Split(' ');
+            string id = words[0];
+            string password = words[1];
+
+            UniversitySystem.LoginValidation validation = new LoginValidation(id, password, null);
+
+            User user = null;
+            bool valid = validation.ValidateUserInput(user);
+            if (valid)
+            {
+                Student student = StudentData.foundStudentByNumber(user.FakNum);
+                firstNameText.Text = student.FirstName;
+                middleNameText.Text = student.MiddleName;
+                lastNameText.Text = student.LastName;
+                facultyText.Text = student.Faculty;
+                specialtyText.Text = student.Specialty;
+                degreeText.Text = student.Degree;
+                statusText.Text = student.status.ToString();
+                facultyNumberText.Text = student.FacultyNumber;
+                courseText.Text = student.Course.ToString();
+                flowText.Text = student.Flow.ToString();
+                groupText.Text = student.Group.ToString();
+            }
+        }
+
     }
 }

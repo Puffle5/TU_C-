@@ -9,6 +9,23 @@
       Title="LogIn">
 
     <Grid>
-        <Button>Log In</Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0">ID:</Label>
+        <Label Grid.Column="0" Grid.Row="1">Pass:</Label>
+        <TextBox Name="IDText" Grid.Column="1" Grid.Row="0" Height="36"></TextBox>
+        <TextBox Name="PassText" Grid.Column="1" Grid.Row="1" Height="36"></TextBox>
+        <Button Grid.Column="0" Grid.Row="2" Click="Button_Click">Log In</Button>
+        <Button Grid.Column="1" Grid.Row="2" Click="Button_Click_1">Log Out</Button>
     </Grid>
 </Page>
